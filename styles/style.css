@@ -17,7 +17,7 @@
 
 .page {
   margin: 0 auto;
-  font-family: var(--font-family-base), fantasy;
+  font-family: var(--font-family-base);
   background-image: var(--page-background);
   background-size: cover;
   background-attachment: fixed;
@@ -31,7 +31,7 @@
   inline-size: var(--container-size);
 }
 
-/* Header */
+
 .header-section {
   align-self: center;
   margin-block: 100px;
@@ -53,19 +53,14 @@
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
 }
 
-/* Content */
+
 .content-list {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-/* Content item (list item) */
-.content-item {
-  /* По желанию — отступы или другие стили */
-}
 
-/* Card → Info Card */
 .info-card {
   border: 2px solid var(--color-dark);
   background-color: var(--color-light);
@@ -117,6 +112,8 @@
   border-block-end: 2px solid var(--color-dark);
   inline-size: 100%;
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 
 
 }
@@ -262,28 +259,54 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-
-.filter-clarendon {
+.filter-contrast-saturate {
   filter: contrast(120%) saturate(125%);
 }
-.filter-gingham {
+
+.filter-brightness-huerotate {
   filter: brightness(105%) hue-rotate(350deg);
 }
-.filter-reyes {
+
+.filter-chrome {
   filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
 }
-.filter-hudson {
+
+.filter-brightened {
   filter: contrast(90%) brightness(120%) saturate(110%);
 }
-.filter-lofi {
+
+.filter-warm {
   filter: contrast(150%) saturate(110%) sepia(50%);
 }
-.filter-maven {
+
+.filter-rich {
   filter: contrast(95%) brightness(95%) saturate(150%) sepia(25%);
 }
-.filter-brooklyn {
+
+.filter-inverted {
   filter: contrast(90%) brightness(110%) invert(90%);
 }
+/*.filter-clarendon {*/
+/*  filter: contrast(120%) saturate(125%);*/
+/*}*/
+/*.filter-gingham {*/
+/*  filter: brightness(105%) hue-rotate(350deg);*/
+/*}*/
+/*.filter-reyes {*/
+/*  filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);*/
+/*}*/
+/*.filter-hudson {*/
+/*  filter: contrast(90%) brightness(120%) saturate(110%);*/
+/*}*/
+/*.filter-lofi {*/
+/*  filter: contrast(150%) saturate(110%) sepia(50%);*/
+/*}*/
+/*.filter-maven {*/
+/*  filter: contrast(95%) brightness(95%) saturate(150%) sepia(25%);*/
+/*}*/
+/*.filter-brooklyn {*/
+/*  filter: contrast(90%) brightness(110%) invert(90%);*/
+/*}*/
 
 
 @media (width <= 375px) {
